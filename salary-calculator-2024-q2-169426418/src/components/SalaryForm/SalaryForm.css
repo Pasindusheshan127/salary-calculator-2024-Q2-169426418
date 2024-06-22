@@ -1,0 +1,82 @@
+/* styles.css */
+
+.salary-calculator {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.salary-calculator h2 {
+  text-align: center;
+  color: #333;
+}
+
+.basic-salary,
+.earning,
+.deduction {
+  margin-bottom: 20px;
+}
+
+.basic-salary-label,
+.earning-title,
+.deduction-title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.basic-salary-input,
+.earning-input,
+.deduction-input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.earning-desc,
+.deduction-desc {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Add-allowance-button,
+.deduction-button,
+.reset-button {
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.Add-allowance-button:hover,
+.deduction-button:hover,
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
