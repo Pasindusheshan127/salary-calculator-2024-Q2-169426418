@@ -61,58 +61,82 @@ const SalarySummary = () => {
 
   return (
     <div className="salary-summary">
-      <h2 className="salary-summary-title">Salary Summary</h2>
+      <h4 className="salary-summary-title heading-4">Your salary</h4>
       <table className="salary-summary-table">
         <thead className="salary-summary-table-head">
           <tr className="salary-summary-table-row">
-            <th>Items</th>
-            <th>Amounts</th>
+            <th className="salary-summary-table-item body-default-semibold">
+              Items
+            </th>
+            <th className="salary-summary-table-amount body-default-semibold">
+              Amounts
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Basic Salary</td>
-            <td>{basicSalary.toFixed(2)}</td>
+          <tr className="salary-summary-table-row">
+            <td className="table-raw-items body-large">Basic Salary</td>
+            <td className="table-row-amounts body-large">
+              {basicSalary.toFixed(2)}
+            </td>
           </tr>
-          <tr>
-            <td>Gross Earnings</td>
-            <td>{totalEarnings.toFixed(2)}</td>
+          <tr className="salary-summary-table-row">
+            <td className="table-raw-items body-large">Gross Earnings</td>
+            <td className="table-row-amounts body-large">
+              {totalEarnings.toFixed(2)}
+            </td>
           </tr>
-          <tr>
-            <td>Gross Deductions</td>
-            <td>{grossDeduction.toFixed(2)}</td>
+          <tr className="salary-summary-table-row">
+            <td className="table-raw-items body-large">Gross Deductions</td>
+            <td className="table-row-amounts body-large">
+              {grossDeduction.toFixed(2)}
+            </td>
           </tr>
-          <tr>
-            <td>Employee EPF (8%)</td>
-            <td>{employeeEPF.toFixed(2)}</td>
+          <tr className="salary-summary-table-row">
+            <td className="table-raw-items body-large">Employee EPF (8%)</td>
+            <td className="table-row-amounts body-large">
+              {employeeEPF.toFixed(2)}
+            </td>
           </tr>
-          <tr>
-            <td>APIT</td>
-            <td>{APIT.toFixed(2)}</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        <strong>Net Salary:</strong> {netSalary.toFixed(2)}
-      </p>
-      <span>
-        <strong>Contribution from Employer:</strong>
-      </span>
-      <table>
-        <tbody>
-          <tr>
-            <td>Employer EPF (12%)</td>
-            <td>{employerEPF.toFixed(2)}</td>
-          </tr>
-          <tr>
-            <td>Employer ETF (3%)</td>
-            <td>{employerETF.toFixed(2)}</td>
+          <tr className="salary-summary-table-row">
+            <td className="table-raw-items body-large">APIT</td>
+            <td className="table-row-amounts body-large">{APIT.toFixed(2)}</td>
           </tr>
         </tbody>
       </table>
-      <p>
-        <strong>Cost To Company (CTC):</strong> {costToCompany.toFixed(2)}
-      </p>
+      <div className="net-salary">
+        <p className="net-sapary-title body-large-semibold">
+          Net Salary(Take Home) {netSalary.toFixed(2)}
+        </p>
+      </div>
+      <div className="contribution">
+        <span className="contribution-title body-default-semibold">
+          <strong>Contribution from Employer</strong>
+        </span>
+        <table>
+          <tbody>
+            <tr className="etf-epf">
+              <td className="etf-epf-title body-large">Employer EPF (12%)</td>
+              <td className="etf-epf-amount body-large">
+                {employerEPF.toFixed(2)}
+              </td>
+            </tr>
+            <tr className="etf-epf">
+              <td className="etf-epf-title body-large">Employer ETF (3%)</td>
+              <td className="etf-epf-amount body-large">
+                {employerETF.toFixed(2)}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="cost-to-company">
+        <div className=" ">
+          <p className="">
+            <strong> CTC(Cost To Company) </strong> {costToCompany.toFixed(2)}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

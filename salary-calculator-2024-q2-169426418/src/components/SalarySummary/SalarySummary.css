@@ -9,3 +9,216 @@
   border-style: solid;
   border-color: #e0e0e0;
 }
+.heading-4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.022px;
+  text-align: left;
+}
+.body-default-semibold {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.body-large {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.body-large-semibold {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  text-align: left;
+}
+.body-default-semibold {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.salary-summary-title {
+  width: 110px;
+  height: 32px;
+  top: 166px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.salary-summary-table {
+  width: 424px;
+  height: 188px;
+  top: 223px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.salary-summary-table-head {
+  width: 424px;
+  height: 20px;
+  top: 223px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #757575;
+}
+
+.salary-summary-table-item {
+  width: 39px;
+  height: 20px;
+  top: 223px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #757575;
+}
+.salary-summary-table-amount {
+  width: 55px;
+  height: 20px;
+  top: 223px;
+  left: 1225px;
+  gap: 0px;
+  opacity: 0px;
+  color: #757575;
+}
+
+.salary-summary-table-row {
+  width: 424px;
+  height: 24px;
+  top: 259px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.table-raw-items {
+  width: 93px;
+  height: 24px;
+  top: 259px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.table-row-amounts {
+  width: 93px;
+  height: 24px;
+  top: 259px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.net-salary {
+  width: 448px;
+  height: 56px;
+  top: 435px;
+  left: 848px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+  border: 0.78px solid #e0e0e0;
+}
+
+/* .net-sapary-title {
+  width: 181px;
+  height: 24px;
+  top: 451px;
+  left: 864px;
+  gap: 0px;
+  opacity: 0px;
+
+  color: #000000;
+} */
+
+.contribution {
+  width: 425px;
+  height: 88px;
+  top: 515px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.contribution-title {
+  width: 219px;
+  height: 20px;
+  top: 515px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #757575;
+}
+.etf-epf {
+  width: 425px;
+  height: 24px;
+  top: 547px;
+  left: 856px;
+  gap: 0px;
+  color: #000000;
+}
+
+.etf-epf-title {
+  width: 160px;
+  height: 24px;
+  top: 547px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.etf-epf-amount {
+  width: 75px;
+  height: 24px;
+  top: 547px;
+  left: 1206px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.cost-to-company {
+  width: 425px;
+  height: 24px;
+  top: 635px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.cost-to-company-title {
+  width: 181px;
+  height: 24px;
+  top: 635px;
+  left: 856px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.cost-to-company-title-p {
+  width: 82px;
+  height: 24px;
+  top: 635px;
+  left: 1199px;
+  gap: 0px;
+  opacity: 0px;
+}

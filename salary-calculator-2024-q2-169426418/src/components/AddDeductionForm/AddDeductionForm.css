@@ -1,0 +1,222 @@
+.add-deduction-form {
+  width: 540px;
+  height: 384px;
+  top: 258px;
+  left: 450px;
+  gap: 0px;
+  opacity: 0px;
+  border-width: 0px, 0px, 0px, 0px;
+  border-style: solid;
+  border-color: #e0e0e0;
+}
+.header {
+  width: 540px;
+  height: 40px;
+  top: 274px;
+  left: 450px;
+  gap: 0px;
+  opacity: 0px;
+}
+.header-title {
+  width: 492px;
+  height: 24px;
+  top: 274px;
+  left: 474px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+.header-title-text {
+  width: 241px;
+  height: 24px;
+  top: 274px;
+  left: 474px;
+  gap: 0px;
+  opacity: 0px;
+}
+.divider {
+  width: 540px;
+  height: 0px;
+  top: 314px;
+  left: 450px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-name {
+  width: 492px;
+  height: 56px;
+  top: 346px;
+  left: 474px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-name-lable {
+  width: 492px;
+  height: 16px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-name-lable-text {
+  width: 492px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-name-lable-input {
+  width: 492px;
+  height: 32px;
+  top: 24px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+.earning-name-input-text {
+  width: 460px;
+  height: 24px;
+  top: 4px;
+  left: 16px;
+  padding: 2px 0px 2px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.b-default-semibold {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.b-default {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.earning-amount {
+  width: 492px;
+  height: 56px;
+  top: 426px;
+  left: 474px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-amount-lable {
+  width: 492px;
+  height: 16px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-amount-lable-text {
+  width: 492px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.earning-amount-lable-input {
+  width: 492px;
+  height: 32px;
+  top: 24px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.earning-amount-input-text {
+  width: 460px;
+  height: 20px;
+  top: 2px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.include-etf-epf {
+  width: Hug (97px) px;
+  height: Hug (24px) px;
+  top: 506px;
+  left: 474px;
+  gap: 8px;
+  opacity: 0px;
+}
+
+.include-etf-epf-text {
+  width: 65px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  padding: 3px 0px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.checkbox:checked {
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  left: 3px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #0052ea;
+}
+
+.footer {
+  width: 540px;
+  height: 72px;
+  top: 570px;
+  left: 450px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.cancle-button {
+  width: Hug (60px) px;
+  height: Hug (40px) px;
+
+  padding: 12px 16px 12px 16px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.cancle-button-text {
+  color: #0052ea;
+}
+
+.button-text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.add-button-text {
+  width: Hug (60px) px;
+  height: Hug (40px) px;
+  padding: 10px 16px 10px 16px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
+  opacity: 0px;
+  background: #0052ea;
+  box-shadow: 0px 1px 4px 0px #0000001a inset;
+  color: white;
+}
