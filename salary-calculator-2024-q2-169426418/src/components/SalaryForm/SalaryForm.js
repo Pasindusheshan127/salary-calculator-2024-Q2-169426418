@@ -6,8 +6,13 @@ import {
   reset,
 } from "../../redux/salarySlice";
 import "./SalaryForm.css";
+import { useState } from "react";
+import AddDeductionForm from "../AddDeductionForm/AddDeductionForm";
 
 const SalaryForm = () => {
+  const [showAddDeductionForm, setShowAddDeductionForm] = useState(false);
+  const dispatch = useDispatch();
+  const basicSalary = useSelector((state) => state.salary.basicSalary);
   return (
     <div>
       <div className="salary-calculator">
@@ -15,24 +20,40 @@ const SalaryForm = () => {
         <div className="basic-salary-form">
           <label className="basic-salary-lable">
             Basic Salary:
-            <input className="basic-salary-input" type="number" />
+            <input
+              className="basic-salary-input"
+              type="number"
+              value={basicSalary}
+              onChange={(e) => dispatch(setBasicSalary(Number(e.target.value)))}
+            />
           </label>
         </div>
         <div className="earning-form">
           <h3 className="earning-title">Earnings</h3>
           <p className="earning-desc">
-            Allowance,Fiexed Allowance, Bouns and etc .
+            Allowance, Fixed Allowance, Bonus, etc.
           </p>
         </div>
         <button className="Add-allowance-button">Add New Allowance</button>
         <hr />
         <div className="deduction-form">
           <h3 className="deducation-title">Deductions</h3>
-
-          <button className="deducation-button">Add New Deduction</button>
+          <button
+            className="deducation-button"
+            onClick={() => setShowAddDeductionForm(true)}
+          >
+            Add New Deduction
+          </button>
         </div>
-        <button className="reset-button">Reset</button>
+        <button className="reset-button" onClick={() => dispatch(reset())}>
+          Reset
+        </button>
       </div>
+      {showAddDeductionForm && (
+        <div className="popup">
+          <AddDeductionForm onClose={() => setShowAddDeductionForm(false)} />
+        </div>
+      )}
     </div>
   );
 };
