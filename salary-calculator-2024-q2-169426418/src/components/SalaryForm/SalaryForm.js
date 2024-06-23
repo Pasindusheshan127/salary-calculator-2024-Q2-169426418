@@ -15,12 +15,7 @@ const SalaryForm = () => {
         <div className="basic-salary-form">
           <label className="basic-salary-lable">
             Basic Salary:
-            <input
-              className="basic-salary-input"
-              type="number"
-              value=""
-              onChange=""
-            />
+            <input className="basic-salary-input" type="number" />
           </label>
         </div>
         <div className="earning-form">
