@@ -8,9 +8,11 @@ import {
 import "./SalaryForm.css";
 import { useState } from "react";
 import AddDeductionForm from "../AddDeductionForm/AddDeductionForm";
+import AddEarningForm from "../AddEarningForm/AddEarningForm";
 
 const SalaryForm = () => {
   const [showAddDeductionForm, setShowAddDeductionForm] = useState(false);
+  const [showAddEarningForm, setShowAddEarningForm] = useState(false);
   const dispatch = useDispatch();
   const basicSalary = useSelector((state) => state.salary.basicSalary);
   return (
@@ -34,7 +36,12 @@ const SalaryForm = () => {
             Allowance, Fixed Allowance, Bonus, etc.
           </p>
         </div>
-        <button className="Add-allowance-button">Add New Allowance</button>
+        <button
+          className="Add-allowance-button"
+          onClick={() => setShowAddEarningForm(true)}
+        >
+          Add New Allowance
+        </button>
         <hr />
         <div className="deduction-form">
           <h3 className="deducation-title">Deductions</h3>
@@ -52,6 +59,11 @@ const SalaryForm = () => {
       {showAddDeductionForm && (
         <div className="popup">
           <AddDeductionForm onClose={() => setShowAddDeductionForm(false)} />
+        </div>
+      )}
+      {showAddEarningForm && (
+        <div className="popup">
+          <AddEarningForm onClose={() => setShowAddEarningForm(false)} />
         </div>
       )}
     </div>
