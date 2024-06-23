@@ -1,14 +1,13 @@
 /* styles.css */
 
 .salary-calculator {
-  max-width: 600px;
-  margin: 0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  font-family: Arial, sans-serif;
+  width: 680px;
+  height: 616px;
+  top: 142px;
+  left: 128px;
+
+  background-color: #e0e0e0;
+  /* font-family: Arial, sans-serif; */
 }
 
 /* .salary-calculator h2 {

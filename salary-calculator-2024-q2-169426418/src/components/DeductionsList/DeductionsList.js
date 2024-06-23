@@ -24,7 +24,6 @@ const DeductionsList = () => {
 
   return (
     <div className="deductions-list">
-      <h3 className="title">Deductions</h3>
       <ul className="deduction-items">
         {deductions.map((deduction) => (
           <li key={deduction.id} className="deduction-item">

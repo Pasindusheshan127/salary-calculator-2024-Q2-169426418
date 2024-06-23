@@ -1,9 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  basicSalary: 0,
-  earnings: [],
-  deductions: [],
+  basicSalary: 125000.0,
+  earnings: [
+    { id: 1, name: "Bonus", amount: 10000, epfEtf: true },
+    { id: 2, name: "Allowance", amount: 5000, epfEtf: false },
+  ],
+  deductions: [
+    { id: 1, name: "Loan", amount: 2000 },
+    { id: 2, name: "Insurance", amount: 1500 },
+  ],
 };
 
 const salarySlice = createSlice({
@@ -17,9 +23,10 @@ const salarySlice = createSlice({
       state.earnings.push(action.payload);
     },
     updateEarning: (state, action) => {
-      const { id, amount, epfEtf } = action.payload;
+      const { id, name, amount, epfEtf } = action.payload;
       const earning = state.earnings.find((e) => e.id === id);
       if (earning) {
+        earning.name = name;
         earning.amount = amount;
         earning.epfEtf = epfEtf;
       }

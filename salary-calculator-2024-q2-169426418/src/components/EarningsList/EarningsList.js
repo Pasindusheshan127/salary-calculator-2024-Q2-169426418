@@ -1,24 +1,52 @@
 import { useSelector, useDispatch } from "react-redux";
 import { updateEarning, deleteEarning } from "../../redux/salarySlice";
 import { useState } from "react";
+
 const EarningsList = () => {
   const dispatch = useDispatch();
   const earnings = useSelector((state) => state.salary.earnings);
-  const [editingEarning, setEditingEarning] = useState(null);
+  const [editingEarning, setEditingEarning] = useState({
+    id: null,
+    name: "",
+    amount: 0,
+    epfEtf: false,
+  });
 
-  const handleUpdateEarning = (id) => {
-    dispatch(updateEarning({ id, ...editingEarning }));
+  const handleUpdateEarning = () => {
+    dispatch(
+      updateEarning({
+        id: editingEarning.id,
+        name: editingEarning.name,
+        amount: editingEarning.amount,
+        epfEtf: editingEarning.epfEtf,
+      })
+    );
     setEditingEarning(null);
   };
+
   const handleDeleteEarning = (id) => {
     dispatch(deleteEarning(id));
   };
+
   const startEditing = (earning) => {
     setEditingEarning({ ...earning });
   };
+
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+
+    setEditingEarning((prevEditingEarning) => ({
+      ...prevEditingEarning,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+    console.log("Editing Earning:", {
+      ...editingEarning,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
   return (
     <div>
-      <h2>Earnings</h2>
       <ul>
         {earnings.map((earning) => (
           <li key={earning.id}>
@@ -28,47 +56,30 @@ const EarningsList = () => {
                   type="text"
                   name="name"
                   value={editingEarning.name}
-                  onChange={(e) =>
-                    setEditingEarning({
-                      ...editingEarning,
-                      name: e.target.value,
-                    })
-                  }
+                  onChange={handleInputChange}
                 />
                 <input
                   type="number"
                   name="amount"
                   value={editingEarning.amount}
-                  onChange={(e) =>
-                    setEditingEarning({
-                      ...editingEarning,
-                      amount: e.target.value,
-                    })
-                  }
+                  onChange={handleInputChange}
                 />
                 <label>
                   EPF/ETF Applicable
                   <input
                     type="checkbox"
-                    name="epfApplicable"
-                    checked={editingEarning.epfApplicable}
-                    onChange={(e) =>
-                      setEditingEarning({
-                        ...editingEarning,
-                        epfApplicable: e.target.checked,
-                      })
-                    }
+                    name="epfEtf"
+                    checked={editingEarning.epfEtf}
+                    onChange={handleInputChange}
                   />
                 </label>
-                <button onClick={() => handleUpdateEarning(earning.id)}>
-                  Save
-                </button>
+                <button onClick={handleUpdateEarning}>Save</button>
                 <button onClick={() => setEditingEarning(null)}>Cancel</button>
               </div>
             ) : (
               <div className="earning-item">
                 {earning.name}: {earning.amount} (EPF:{" "}
-                {earning.epfApplicable.toString()})
+                {earning.epfEtf?.toString()})
                 <button onClick={() => startEditing(earning)}>Update</button>
                 <button onClick={() => handleDeleteEarning(earning.id)}>
                   Delete

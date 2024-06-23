@@ -1,14 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setBasicSalary,
-  addEarning,
-  addDeduction,
-  reset,
-} from "../../redux/salarySlice";
+import { setBasicSalary, reset } from "../../redux/salarySlice";
 import "./SalaryForm.css";
 import { useState } from "react";
 import AddDeductionForm from "../AddDeductionForm/AddDeductionForm";
 import AddEarningForm from "../AddEarningForm/AddEarningForm";
+import EarningsList from "../EarningsList/EarningsList";
+import DeductionsList from "../DeductionsList/DeductionsList";
 
 const SalaryForm = () => {
   const [showAddDeductionForm, setShowAddDeductionForm] = useState(false);
@@ -35,6 +32,7 @@ const SalaryForm = () => {
           <p className="earning-desc">
             Allowance, Fixed Allowance, Bonus, etc.
           </p>
+          <EarningsList />
         </div>
         <button
           className="Add-allowance-button"
@@ -45,6 +43,10 @@ const SalaryForm = () => {
         <hr />
         <div className="deduction-form">
           <h3 className="deducation-title">Deductions</h3>
+          <p className="deducation-desc">
+            Salary Advance, Loan Deduction and all.
+          </p>
+          <DeductionsList />
           <button
             className="deducation-button"
             onClick={() => setShowAddDeductionForm(true)}
