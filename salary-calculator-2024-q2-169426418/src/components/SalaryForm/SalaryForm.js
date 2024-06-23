@@ -12,7 +12,7 @@ const SalaryForm = () => {
     <div>
       <div className="salary-calculator">
         <h2>Calculate Your Salary</h2>
-        <div className="basic-salary">
+        <div className="basic-salary-form">
           <label className="basic-salary-lable">
             Basic Salary:
             <input
@@ -23,16 +23,36 @@ const SalaryForm = () => {
             />
           </label>
         </div>
-        <div className="earning">
+        <div className="earning-form">
           <h3 className="earning-title">Earnings</h3>
           <p className="earning-desc">
             Allowance,Fiexed Allowance, Bouns and etc .
           </p>
+          <label>
+            Name:
+            <input type="text" />
+          </label>
+          <label>
+            Amount:
+            <input type="number" />
+          </label>
+          <label>
+            EPF/ETF:
+            <input type="checkbox" />
+          </label>
         </div>
         <button className="Add-allowance-button">Add New Allowance</button>
-        <div className="deduction">
+        <hr />
+        <div className="deduction-form">
           <h3 className="deducation-title">Deductions</h3>
-
+          <label>
+            Name:
+            <input type="text" />
+          </label>
+          <label>
+            Amount:
+            <input type="number" />
+          </label>
           <button className="deducation-button">Add New Deduction</button>
         </div>
         <button className="reset-button">Reset</button>

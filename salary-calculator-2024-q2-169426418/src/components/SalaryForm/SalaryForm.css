@@ -2,7 +2,7 @@
 
 .salary-calculator {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -11,7 +11,7 @@
   font-family: Arial, sans-serif;
 }
 
-.salary-calculator h2 {
+/* .salary-calculator h2 {
   text-align: center;
   color: #333;
 }
@@ -79,4 +79,4 @@ button {
 
 .reset-button:hover {
   background-color: #c82333;
-}
+} */
