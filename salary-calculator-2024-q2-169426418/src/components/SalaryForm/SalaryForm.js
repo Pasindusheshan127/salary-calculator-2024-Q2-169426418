@@ -15,9 +15,9 @@ const SalaryForm = () => {
   return (
     <div>
       <div className="salary-calculator">
-        <h2>Calculate Your Salary</h2>
+        <h4 className="salary-calculator-title">Calculate Your Salary</h4>
         <div className="basic-salary-form">
-          <label className="basic-salary-lable">
+          <label className="basic-salary-lable body-large-semibold">
             Basic Salary:
             <input
               className="basic-salary-input"
@@ -28,12 +28,12 @@ const SalaryForm = () => {
           </label>
         </div>
         <div className="earning-form">
-          <h3 className="earning-title">Earnings</h3>
-          <p className="earning-desc">
+          <h3 className="earning-title body-large-semibold">Earnings</h3>
+          <p className="earning-desc body-small">
             Allowance, Fixed Allowance, Bonus, etc.
           </p>
-          <EarningsList />
         </div>
+        <EarningsList />
         <button
           className="Add-allowance-button"
           onClick={() => setShowAddEarningForm(true)}
@@ -42,18 +42,23 @@ const SalaryForm = () => {
         </button>
         <hr />
         <div className="deduction-form">
-          <h3 className="deducation-title">Deductions</h3>
-          <p className="deducation-desc">
+          <h3 className="deducation-title body-large-semibold">Deductions</h3>
+          <p className="deducation-desc body-small">
             Salary Advance, Loan Deduction and all.
           </p>
-          <DeductionsList />
-          <button
-            className="deducation-button"
-            onClick={() => setShowAddDeductionForm(true)}
-          >
-            Add New Deduction
-          </button>
         </div>
+        <DeductionsList />
+        <div className="deduction-button-form">
+          <div className="deduction-button-frame">
+            <button
+              className="deducation-button button-text"
+              onClick={() => setShowAddDeductionForm(true)}
+            >
+              Add New Deduction
+            </button>
+          </div>
+        </div>
+
         <button className="reset-button" onClick={() => dispatch(reset())}>
           Reset
         </button>

@@ -1,4 +1,4 @@
-import React from "react";
+import "./SalarySummary.css";
 import { useSelector } from "react-redux";
 
 const calculateTax = (grossEarnings) => {
@@ -60,11 +60,11 @@ const SalarySummary = () => {
   const costToCompany = grossEarnings + employerEPF + employerETF;
 
   return (
-    <div>
-      <h2>Salary Summary</h2>
-      <table>
-        <thead>
-          <tr>
+    <div className="salary-summary">
+      <h2 className="salary-summary-title">Salary Summary</h2>
+      <table className="salary-summary-table">
+        <thead className="salary-summary-table-head">
+          <tr className="salary-summary-table-row">
             <th>Items</th>
             <th>Amounts</th>
           </tr>

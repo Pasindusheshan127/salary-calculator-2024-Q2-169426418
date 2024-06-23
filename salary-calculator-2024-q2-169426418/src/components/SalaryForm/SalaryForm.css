@@ -5,77 +5,165 @@
   height: 616px;
   top: 142px;
   left: 128px;
-
-  background-color: #e0e0e0;
-  /* font-family: Arial, sans-serif; */
+  gap: 0px;
+  opacity: 0px;
+  border-width: 0px, 0px, 0px, 0px;
+  border-style: solid;
+  border-color: #e0e0e0;
 }
+.salary-calculator-title {
+  width: 209px;
+  height: 32px;
+  top: 166px;
+  left: 152px;
+  gap: 0px;
+  opacity: 0px;
 
-/* .salary-calculator h2 {
-  text-align: center;
-  color: #333;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.022px;
+  text-align: left;
 }
-
-.basic-salary,
-.earning,
-.deduction {
-  margin-bottom: 20px;
-}
-
-.basic-salary-label,
-.earning-title,
-.deduction-title {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
-}
-
-.basic-salary-input,
-.earning-input,
-.deduction-input {
-  width: calc(100% - 20px);
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 5px;
-}
-
-.earning-desc,
-.deduction-desc {
-  margin-bottom: 10px;
-  color: #666;
-  font-size: 14px;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  margin-bottom: 10px;
+.body-large-semibold {
+  font-family: Inter;
   font-size: 16px;
-  cursor: pointer;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  text-align: left;
+}
+.body-small {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.button-text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
 }
 
-.Add-allowance-button,
-.deduction-button,
-.reset-button {
-  background-color: #007bff;
-  color: #fff;
-  transition: background-color 0.3s;
+.basic-salary-form {
+  /* display: flex; */
+  width: Hug (356px) px;
+  height: Hug (80px) px;
+  top: 222px;
+  left: 152px;
+  gap: 8px;
+  opacity: 0px;
+}
+.basic-salary-lable {
+  width: 94px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+}
+.basic-salary-input {
+  width: Fixed (356px) px;
+  height: Hug (48px) px;
+  padding: 12px 15px 12px 15px;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
 }
 
-.Add-allowance-button:hover,
-.deduction-button:hover,
-.reset-button:hover {
-  background-color: #0056b3;
+.earning-form {
+  width: Hug (248px) px;
+  height: Hug (48px) px;
+  top: 326px;
+  left: 152px;
+  gap: 4px;
+  opacity: 0px;
 }
 
-.reset-button {
-  background-color: #dc3545;
+.body-small {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
 }
 
-.reset-button:hover {
-  background-color: #c82333;
-} */
+.earning-title {
+  width: 68px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: right;
+  color: #000000;
+}
+.earning-desc {
+  width: 248px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+  color: #757575;
+}
+
+.Add-allowance-button {
+  width: 162px;
+  height: 40px;
+  top: 486px;
+  left: 152px;
+  gap: 10px;
+  opacity: 0px;
+  width: Hug (162px) px;
+  height: Hug (40px) px;
+  padding: 8px 0px 8px 0px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.deduction-form {
+  width: Hug (238px) px;
+  height: Hug (48px) px;
+  top: 582px;
+  left: 152px;
+  gap: 4px;
+  opacity: 0px;
+}
+
+.deducation-title {
+  width: 88px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000;
+}
+
+.deducation-desc {
+  width: 238px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+.deduction-button-form {
+  width: Hug (162px) px;
+  height: Hug (40px) px;
+  padding: 8px 0px 8px 0px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+.deduction-button-frame {
+  width: Hug (162px) px;
+  height: Hug (24px) px;
+  gap: 4px;
+  opacity: 0px;
+}
+.deducation-button {
+  width: 134px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
