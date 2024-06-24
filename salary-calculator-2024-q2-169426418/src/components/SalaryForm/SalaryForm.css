@@ -120,7 +120,7 @@
 .add-allowance-button {
   height: 40px;
   position: absolute;
-  top: 486px;
+  top: 516px;
   left: 152px;
   gap: 10px;
   padding: 8px 0px 8px 0px;
@@ -252,4 +252,23 @@
   opacity: 0px;
   color: #0052ea;
   cursor: pointer;
+}
+
+/* popup */
+/* SalaryForm.css */
+
+.background-dimmed {
+  background-color: rgba(0, 0, 0, 0.1); /* Light overlay */
+  pointer-events: none; /* Prevent interaction with the background elements */
+}
+
+.popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }

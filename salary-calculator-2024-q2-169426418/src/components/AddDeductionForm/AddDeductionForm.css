@@ -1,13 +1,15 @@
-/*.add-deduction-form {
-  width: 540px;
-  height: 384px;
+.add-deduction-form {
+  padding: 250px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
   top: 258px;
   left: 450px;
-  gap: 0px;
-  opacity: 0px;
-  border-width: 0px, 0px, 0px, 0px;
-  border-style: solid;
-  border-color: #e0e0e0;
+  margin: auto;
+  opacity: 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .header {
   width: 540px;
@@ -43,7 +45,7 @@
   opacity: 0px;
 }
 
-.deduction-name {
+.earning-name {
   width: 492px;
   height: 56px;
   top: 346px;
@@ -52,21 +54,21 @@
   opacity: 0px;
 }
 
-.deduction-name-lable {
+.earning-name-lable {
   width: 492px;
   height: 16px;
   gap: 0px;
   opacity: 0px;
 }
 
-.deduction-name-lable-text {
+.earning-name-lable-text {
   width: 492px;
   height: 20px;
   gap: 0px;
   opacity: 0px;
 }
 
-.deduction-name-lable-input {
+.earning-name-lable-input {
   width: 492px;
   height: 32px;
   top: 24px;
@@ -74,7 +76,7 @@
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
 }
-.deduction-name-input-text {
+.earning-name-input-text {
   width: 460px;
   height: 24px;
   top: 4px;
@@ -100,7 +102,7 @@
   text-align: left;
 }
 
-.deduction-amount {
+.earning-amount {
   width: 492px;
   height: 56px;
   top: 426px;
@@ -109,21 +111,21 @@
   opacity: 0px;
 }
 
-.deduction-amount-lable {
+.earning-amount-lable {
   width: 492px;
   height: 16px;
   gap: 0px;
   opacity: 0px;
 }
 
-.deduction-amount-lable-text {
+.earning-amount-lable-text {
   width: 492px;
   height: 20px;
   gap: 0px;
   opacity: 0px;
 }
 
-.deduction-amount-lable-input {
+.earning-amount-lable-input {
   width: 492px;
   height: 32px;
   top: 24px;
@@ -132,7 +134,7 @@
   opacity: 0px;
 }
 
-.deduction-amount-input-text {
+.earning-amount-input-text {
   width: 460px;
   height: 20px;
   top: 2px;
@@ -181,14 +183,15 @@
   height: 72px;
   top: 570px;
   left: 450px;
-  gap: 0px;
-  opacity: 0px;
+  display: flex;
 }
 
 .cancle-button {
   width: Hug (60px) px;
   height: Hug (40px) px;
-
+  position: absolute;
+  top: 40px;
+  left: 620px;
   padding: 12px 16px 12px 16px;
   gap: 10px;
   border-radius: 4px 0px 0px 0px;
@@ -198,7 +201,16 @@
 .cancle-button-text {
   color: #0052ea;
 }
-
+.add-button {
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  top: 470px;
+  left: 700px;
+  cursor: pointer;
+}
 .button-text {
   font-family: Inter;
   font-size: 14px;
@@ -208,32 +220,7 @@
 }
 
 .add-button-text {
-  width: Hug (60px) px;
-  height: Hug (40px) px;
-  padding: 10px 16px 10px 16px;
-  gap: 10px;
-  border-radius: 4px 0px 0px 0px;
-  opacity: 0px;
-
-  opacity: 0px;
   background: #0052ea;
   box-shadow: 0px 1px 4px 0px #0000001a inset;
   color: white;
-}*/
-
-/* .footer {
-  display: flex;
-  justify-content: space-between; 
 }
-.footer button {
-  background-color: #0052ea; 
-  color: white;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.footer button:hover {
-  background-color: #0052ea; 
-} */

@@ -26,7 +26,7 @@ const AddEarningForm = ({ onClose }) => {
   };
 
   return (
-    <div className="add-deduction-form">
+    <div className="add-earning-form">
       <div className="header">
         <div className="header-title">
           <h3 className="header-title-text">Add New Earning</h3>

@@ -28,14 +28,14 @@ const AddDeductionForm = ({ onClose }) => {
         </div>
       </div>
       <hr className="divider" />
-      <div className="deduction-name">
-        <label className="deduction-name-lable">
-          <div className="deduction-name-lable-text b-default-semibold">
+      <div className="earning-name">
+        <label className="earning-name-lable">
+          <div className="earning-name-lable-text b-default-semibold">
             Deduction Name
           </div>
-          <div className="deduction-name-lable-input">
+          <div className="earning-name-lable-input">
             <input
-              className="deduction-name-input-text b-default"
+              className="earning-name-input-text b-default"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -43,14 +43,14 @@ const AddDeductionForm = ({ onClose }) => {
           </div>
         </label>
       </div>
-      <div className="deduction-amount">
-        <label className="deduction-amount-lable">
-          <div className="deduction-amount-lable-text b-default-semibold">
+      <div className="earning-amount">
+        <label className="earning-amount-lable">
+          <div className="earning-amount-lable-text b-default-semibold">
             Amount
           </div>
-          <div className="deduction-amount-lable-input">
+          <div className="earning-amount-lable-input">
             <input
-              className="deduction-amount-input-text b-default"
+              className="earning-amount-input-text b-default"
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
@@ -66,7 +66,6 @@ const AddDeductionForm = ({ onClose }) => {
           </button>
         </div>
         <div className="add-button">
-          <img src="./assets/icons/add.png" alt="" />
           <button
             className="add-button-text button-text"
             onClick={handleAddDeduction}
