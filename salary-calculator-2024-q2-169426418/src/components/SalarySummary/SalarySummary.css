@@ -1,8 +1,8 @@
 .salary-summary {
   width: 480px;
   height: 616px;
-  top: 476px;
-  left: 172px;
+  top: 310px;
+  left: 162px;
   gap: 0px;
   margin: 0 auto;
   opacity: 1px;
@@ -54,8 +54,9 @@
 .salary-summary-title {
   width: 110px;
   height: 32px;
-  top: 166px;
-  left: 856px;
+  position: absolute;
+  top: 10px;
+  left: 28px;
   gap: 0px;
   opacity: 0px;
   color: #000000;
@@ -64,8 +65,9 @@
 .salary-summary-table {
   width: 424px;
   height: 188px;
-  top: 223px;
-  left: 856px;
+  position: absolute;
+  top: 80px;
+  left: 28px;
   gap: 0px;
   opacity: 0px;
 }
@@ -129,32 +131,31 @@
 }
 
 .net-salary {
-  width: 448px;
+  width: 348px;
   height: 56px;
-  top: 435px;
-  left: 848px;
-  gap: 0px;
+  position: absolute;
+  top: 290px;
+  left: 28px;
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
   border: 0.78px solid #e0e0e0;
 }
 
-/* .net-sapary-title {
-  width: 181px;
-  height: 24px;
-  top: 451px;
-  left: 864px;
-  gap: 0px;
-  opacity: 0px;
-
+.net-salary-title-amount {
+  position: absolute;
+  right: 68px;
   color: #000000;
-} */
-
+}
+.net-salary-title-name {
+  position: absolute;
+  left: 6px;
+}
 .contribution {
   width: 425px;
   height: 88px;
-  top: 515px;
-  left: 856px;
+  position: absolute;
+  top: 370px;
+  left: 28px;
   gap: 0px;
   opacity: 0px;
 }
@@ -162,28 +163,17 @@
 .contribution-title {
   width: 219px;
   height: 20px;
-  top: 515px;
-  left: 856px;
-  gap: 0px;
-  opacity: 0px;
   color: #757575;
 }
 .etf-epf {
   width: 425px;
   height: 24px;
-  top: 547px;
-  left: 856px;
-  gap: 0px;
   color: #000000;
 }
 
 .etf-epf-title {
   width: 160px;
   height: 24px;
-  top: 547px;
-  left: 856px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .etf-epf-amount {
@@ -199,8 +189,9 @@
 .cost-to-company {
   width: 425px;
   height: 24px;
-  top: 635px;
-  left: 856px;
+  position: absolute;
+  top: 480px;
+  left: 28px;
   gap: 0px;
   opacity: 0px;
   color: #000000;
@@ -223,4 +214,9 @@
   left: 1199px;
   gap: 0px;
   opacity: 0px;
+}
+
+.cost-to-company-amount {
+  position: absolute;
+  right: 138px;
 }

@@ -14,7 +14,11 @@ const SalaryForm = () => {
   const basicSalary = useSelector((state) => state.salary.basicSalary);
   return (
     <div>
-      <div className="salary-calculator">
+      <div
+        className={`salary-calculator ${
+          showAddDeductionForm || showAddEarningForm ? "background-dimmed" : ""
+        }`}
+      >
         <h4 className="salary-calculator-title">Calculate Your Salary</h4>
         <div className="basic-salary-form">
           <label className="basic-salary-lable body-large-semibold">

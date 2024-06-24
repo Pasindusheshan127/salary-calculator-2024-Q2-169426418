@@ -106,12 +106,18 @@ const SalarySummary = () => {
       </table>
       <div className="net-salary">
         <p className="net-sapary-title body-large-semibold">
-          Net Salary(Take Home) {netSalary.toFixed(2)}
+          <span className="net-salary-title-name">Net Salary(Take Home) </span>
+          <span className="net-salary-title-amount">
+            {" "}
+            {netSalary.toFixed(2)}
+          </span>
         </p>
       </div>
       <div className="contribution">
         <span className="contribution-title body-default-semibold">
-          <strong>Contribution from Employer</strong>
+          <strong className="contribution-title-name">
+            Contribution from Employer
+          </strong>
         </span>
         <table>
           <tbody>
@@ -133,7 +139,10 @@ const SalarySummary = () => {
       <div className="cost-to-company">
         <div className=" ">
           <p className="">
-            <strong> CTC(Cost To Company) </strong> {costToCompany.toFixed(2)}
+            <strong> CTC(Cost To Company) </strong>
+            <span className="cost-to-company-amount">
+              {costToCompany.toFixed(2)}
+            </span>
           </p>
         </div>
       </div>
