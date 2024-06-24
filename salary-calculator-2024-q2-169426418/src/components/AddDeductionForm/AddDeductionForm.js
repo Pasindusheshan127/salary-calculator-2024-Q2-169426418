@@ -9,6 +9,7 @@ const AddDeductionForm = ({ onClose }) => {
   const [amount, setAmount] = useState("");
 
   const handleAddDeduction = () => {
+    console.log("Add button clicked");
     dispatch(
       addDeduction({
         id: Date.now(),
@@ -27,14 +28,14 @@ const AddDeductionForm = ({ onClose }) => {
         </div>
       </div>
       <hr className="divider" />
-      <div className="earning-name">
-        <label className="earning-name-lable">
-          <div className="earning-name-lable-text b-default-semibold">
+      <div className="deduction-name">
+        <label className="deduction-name-lable">
+          <div className="deduction-name-lable-text b-default-semibold">
             Deduction Name
           </div>
-          <div className="earning-name-lable-input">
+          <div className="deduction-name-lable-input">
             <input
-              className="earning-name-input-text b-default"
+              className="deduction-name-input-text b-default"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -42,14 +43,14 @@ const AddDeductionForm = ({ onClose }) => {
           </div>
         </label>
       </div>
-      <div className="earning-amount">
-        <label className="earning-amount-lable">
-          <div className="earning-amount-lable-text b-default-semibold">
+      <div className="deduction-amount">
+        <label className="deduction-amount-lable">
+          <div className="deduction-amount-lable-text b-default-semibold">
             Amount
           </div>
-          <div className="earning-amount-lable-input">
+          <div className="deduction-amount-lable-input">
             <input
-              className="earning-amount-input-text b-default"
+              className="deduction-amount-input-text b-default"
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
@@ -65,6 +66,7 @@ const AddDeductionForm = ({ onClose }) => {
           </button>
         </div>
         <div className="add-button">
+          <img src="./assets/icons/add.png" alt="" />
           <button
             className="add-button-text button-text"
             onClick={handleAddDeduction}

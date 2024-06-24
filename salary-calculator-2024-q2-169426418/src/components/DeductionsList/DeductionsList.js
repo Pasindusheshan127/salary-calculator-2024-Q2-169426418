@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { updateDeduction, deleteDeduction } from "../../redux/salarySlice";
 import { useState } from "react";
+import "./DeductionsList.css";
 
 const DeductionsList = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const DeductionsList = () => {
       <ul className="deduction-items">
         {deductions.map((deduction) => (
           <li key={deduction.id} className="deduction-item">
-            <span className="deduction-name">{deduction.name}: </span>
+            <span className="deduction-name body-large">{deduction.name}:</span>
             {isEditing === deduction.id ? (
               <input
                 type="number"
@@ -36,7 +37,9 @@ const DeductionsList = () => {
                 className="deduction-input"
               />
             ) : (
-              <span className="deduction-amount">{deduction.amount}</span>
+              <span className="deduction-amount body-large">
+                {deduction.amount}
+              </span>
             )}
             {isEditing === deduction.id ? (
               <button
@@ -46,19 +49,19 @@ const DeductionsList = () => {
                 Save
               </button>
             ) : (
-              <button
+              <div
                 onClick={() => handleUpdateClick(deduction)}
                 className="update-button"
               >
-                Update
-              </button>
+                <img src="/assets/icons/edit.png" alt="Update" />
+              </div>
             )}
-            <button
-              onClick={() => handleDeleteClick(deduction.id)}
+            <div
               className="delete-button"
+              onClick={() => handleDeleteClick(deduction.id)}
             >
-              Delete
-            </button>
+              <img src="/assets/icons/clear.png" alt="Delete" />
+            </div>
           </li>
         ))}
       </ul>

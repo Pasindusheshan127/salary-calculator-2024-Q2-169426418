@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addEarning } from "../../redux/salarySlice";
 import "./AddEarningForm.css";
@@ -70,7 +70,7 @@ const AddEarningForm = ({ onClose }) => {
             checked={includeETF}
             onChange={handleIncludeETF}
           />
-          <div className="include-etf-epf-text"> ETF/EPF</div>
+          <span className="include-etf-epf-text"> ETF/EPF</span>
         </label>
       </div>
       <div className="footer">

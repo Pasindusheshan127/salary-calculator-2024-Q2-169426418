@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { updateEarning, deleteEarning } from "../../redux/salarySlice";
 import { useState } from "react";
+import "./EarningsList.css";
 
 const EarningsList = () => {
   const dispatch = useDispatch();
@@ -47,9 +48,9 @@ const EarningsList = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="earnings-list">
         {earnings.map((earning) => (
-          <li key={earning.id}>
+          <li className="earning-item" key={earning.id}>
             {editingEarning && editingEarning.id === earning.id ? (
               <div className="edit-earning-form">
                 <input
@@ -65,7 +66,7 @@ const EarningsList = () => {
                   onChange={handleInputChange}
                 />
                 <label>
-                  EPF/ETF Applicable
+                  EPF/ETF
                   <input
                     type="checkbox"
                     name="epfEtf"
@@ -78,12 +79,36 @@ const EarningsList = () => {
               </div>
             ) : (
               <div className="earning-item">
-                {earning.name}: {earning.amount} (EPF:{" "}
-                {earning.epfEtf?.toString()})
-                <button onClick={() => startEditing(earning)}>Update</button>
-                <button onClick={() => handleDeleteEarning(earning.id)}>
-                  Delete
-                </button>
+                <span className="eraning-item-name body-large">
+                  {earning.name}:
+                </span>
+                <span className="eraning-item-amount body-large">
+                  {earning.amount}
+                </span>
+                {earning.epfEtf ? (
+                  <label className="epf-etf-label">
+                    <img
+                      className="epf-etf-label-icon"
+                      src="/assets/icons/checked.png"
+                      alt="EPF/ETF"
+                    />
+                    <span className="epf-etf-label-text">EPF/ETF</span>
+                  </label>
+                ) : (
+                  ""
+                )}
+                <div
+                  onClick={() => startEditing(earning)}
+                  className="update-button"
+                >
+                  <img src="/assets/icons/edit.png" alt="Update" />
+                </div>
+                <div
+                  className="delete-button"
+                  onClick={() => handleDeleteEarning(earning.id)}
+                >
+                  <img src="/assets/icons/clear.png" alt="Delete" />
+                </div>
               </div>
             )}
           </li>

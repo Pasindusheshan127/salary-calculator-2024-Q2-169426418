@@ -1,23 +1,23 @@
-/* styles.css */
-
 .salary-calculator {
   width: 680px;
   height: 616px;
-  top: 142px;
-  left: 128px;
-  gap: 0px;
-  opacity: 0px;
-  border-width: 0px, 0px, 0px, 0px;
+  top: 310px;
+  left: 152px;
+  margin: 0 auto;
+  opacity: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: #e0e0e0;
+  position: relative;
 }
 .salary-calculator-title {
   width: 209px;
   height: 32px;
+  position: absolute;
   top: 166px;
   left: 152px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1px;
 
   font-family: Inter;
   font-size: 20px;
@@ -50,37 +50,44 @@
 }
 
 .basic-salary-form {
-  /* display: flex; */
-  width: Hug (356px) px;
-  height: Hug (80px) px;
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  height: 80px px;
+  margin-bottom: 20px;
+  position: absolute;
   top: 222px;
   left: 152px;
   gap: 8px;
-  opacity: 0px;
+  opacity: 1px;
 }
 .basic-salary-lable {
   width: 94px;
   height: 24px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1px;
+  margin-bottom: 8px;
 }
 .basic-salary-input {
-  width: Fixed (356px) px;
-  height: Hug (48px) px;
+  width: 94px;
+  height: 10px;
   padding: 12px 15px 12px 15px;
+  margin-bottom: 5px;
   gap: 8px;
   border-radius: 4px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
   opacity: 0px;
   background: #ffffff;
   border: 1px solid #e0e0e0;
 }
 
 .earning-form {
-  width: Hug (248px) px;
-  height: Hug (48px) px;
+  width: 248px;
+  height: 48px;
+  position: absolute;
   top: 326px;
   left: 152px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   gap: 4px;
   opacity: 0px;
 }
@@ -107,26 +114,52 @@
   gap: 0px;
   opacity: 0px;
   color: #757575;
+  text-align: left;
 }
 
-.Add-allowance-button {
-  width: 162px;
+.add-allowance-button {
   height: 40px;
+  position: absolute;
   top: 486px;
   left: 152px;
   gap: 10px;
-  opacity: 0px;
-  width: Hug (162px) px;
-  height: Hug (40px) px;
   padding: 8px 0px 8px 0px;
-  gap: 10px;
   border-radius: 4px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.add-allowance-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.add-allowance-text {
+  width: 134px;
+  height: 20px;
+  color: #0052ea;
+  cursor: pointer;
+}
+.earning-list {
+  width: Hug (311px) px;
+  height: Hug (32px) px;
+  position: absolute;
+  top: 406px;
+  left: 120px;
+  gap: 8px;
   opacity: 0px;
 }
-
+.divider-hr {
+  width: 488px;
+  height: 0px;
+  position: absolute;
+  top: 566px;
+  left: 152px;
+}
 .deduction-form {
   width: Hug (238px) px;
   height: Hug (48px) px;
+  position: absolute;
   top: 582px;
   left: 152px;
   gap: 4px;
@@ -142,10 +175,12 @@
 }
 
 .deducation-desc {
-  width: 238px;
+  width: 248px;
   height: 20px;
   gap: 0px;
   opacity: 0px;
+  color: #757575;
+  text-align: left;
 }
 .deduction-button-form {
   width: Hug (162px) px;
@@ -166,4 +201,55 @@
   height: 20px;
   gap: 0px;
   opacity: 0px;
+}
+.add-deduction-button {
+  width: 162px;
+  height: 40px;
+  position: absolute;
+  top: 756px;
+  left: 152px;
+  gap: 10px;
+  opacity: 0px;
+  padding: 8px 0px 8px 0px;
+  border-radius: 4px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.deduction-list {
+  width: 124px;
+  height: 10px;
+  position: absolute;
+  top: 654px;
+  left: 120px;
+  gap: 8px;
+  opacity: 0px;
+}
+.reset-button-frame {
+  position: absolute;
+  width: 67px;
+  height: 24px;
+  gap: 4px;
+  position: absolute;
+  top: 196px;
+  right: 54px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.reset-button {
+  width: 24px;
+  height: 24px;
+  padding: 3px 2px 3px 1px;
+  cursor: pointer;
+}
+
+.reset-button-text {
+  width: 39px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+  color: #0052ea;
+  cursor: pointer;
 }

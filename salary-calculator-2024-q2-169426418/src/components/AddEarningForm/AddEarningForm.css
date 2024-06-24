@@ -1,0 +1,43 @@
+.add-deduction-form {
+  width: 540px;
+  height: 384px;
+  padding: 250px;
+  border-radius: 10px;
+  background-color: aqua;
+  position: absolute;
+  top: 258px;
+  left: 450px;
+  margin: auto;
+  opacity: 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.include-etf-epf {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.include-etf-epf label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.footer {
+  display: flex;
+}
+.footer button {
+  background-color: #0052ea;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #0052ea;
+}
+
+.divider {
+  /* width: 84px; */
+  color: black;
+}

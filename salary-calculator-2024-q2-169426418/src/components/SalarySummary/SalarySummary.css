@@ -1,13 +1,15 @@
 .salary-summary {
   width: 480px;
-  height: 614px;
-  top: 142px;
-  left: 832px;
+  height: 616px;
+  top: 476px;
+  left: 172px;
   gap: 0px;
-  opacity: 0px;
+  margin: 0 auto;
+  opacity: 1px;
   border-width: 0px, 0px, 0px, 0px;
   border-style: solid;
   border-color: #e0e0e0;
+  position: relative;
 }
 .heading-4 {
   font-family: Inter;

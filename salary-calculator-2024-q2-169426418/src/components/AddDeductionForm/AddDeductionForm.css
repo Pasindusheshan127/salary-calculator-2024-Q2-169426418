@@ -1,4 +1,4 @@
-.add-deduction-form {
+/*.add-deduction-form {
   width: 540px;
   height: 384px;
   top: 258px;
@@ -43,7 +43,7 @@
   opacity: 0px;
 }
 
-.earning-name {
+.deduction-name {
   width: 492px;
   height: 56px;
   top: 346px;
@@ -52,21 +52,21 @@
   opacity: 0px;
 }
 
-.earning-name-lable {
+.deduction-name-lable {
   width: 492px;
   height: 16px;
   gap: 0px;
   opacity: 0px;
 }
 
-.earning-name-lable-text {
+.deduction-name-lable-text {
   width: 492px;
   height: 20px;
   gap: 0px;
   opacity: 0px;
 }
 
-.earning-name-lable-input {
+.deduction-name-lable-input {
   width: 492px;
   height: 32px;
   top: 24px;
@@ -74,7 +74,7 @@
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
 }
-.earning-name-input-text {
+.deduction-name-input-text {
   width: 460px;
   height: 24px;
   top: 4px;
@@ -100,7 +100,7 @@
   text-align: left;
 }
 
-.earning-amount {
+.deduction-amount {
   width: 492px;
   height: 56px;
   top: 426px;
@@ -109,21 +109,21 @@
   opacity: 0px;
 }
 
-.earning-amount-lable {
+.deduction-amount-lable {
   width: 492px;
   height: 16px;
   gap: 0px;
   opacity: 0px;
 }
 
-.earning-amount-lable-text {
+.deduction-amount-lable-text {
   width: 492px;
   height: 20px;
   gap: 0px;
   opacity: 0px;
 }
 
-.earning-amount-lable-input {
+.deduction-amount-lable-input {
   width: 492px;
   height: 32px;
   top: 24px;
@@ -132,7 +132,7 @@
   opacity: 0px;
 }
 
-.earning-amount-input-text {
+.deduction-amount-input-text {
   width: 460px;
   height: 20px;
   top: 2px;
@@ -219,4 +219,21 @@
   background: #0052ea;
   box-shadow: 0px 1px 4px 0px #0000001a inset;
   color: white;
+}*/
+
+/* .footer {
+  display: flex;
+  justify-content: space-between; 
 }
+.footer button {
+  background-color: #0052ea; 
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #0052ea; 
+} */

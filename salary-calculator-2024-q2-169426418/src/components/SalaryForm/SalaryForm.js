@@ -33,35 +33,55 @@ const SalaryForm = () => {
             Allowance, Fixed Allowance, Bonus, etc.
           </p>
         </div>
-        <EarningsList />
-        <button
-          className="Add-allowance-button"
+        <div className="earning-list">
+          <EarningsList />
+        </div>
+
+        <div
+          className="add-allowance-button"
           onClick={() => setShowAddEarningForm(true)}
         >
-          Add New Allowance
-        </button>
-        <hr />
+          <img
+            className="add-allowance-icon"
+            src="assets/icons/add.png"
+            alt=""
+          />
+          <span className="add-allowance-text button-text">
+            Add New Allowance
+          </span>
+        </div>
+        <hr className="divider-hr" />
         <div className="deduction-form">
           <h3 className="deducation-title body-large-semibold">Deductions</h3>
           <p className="deducation-desc body-small">
             Salary Advance, Loan Deduction and all.
           </p>
         </div>
-        <DeductionsList />
-        <div className="deduction-button-form">
-          <div className="deduction-button-frame">
-            <button
-              className="deducation-button button-text"
-              onClick={() => setShowAddDeductionForm(true)}
-            >
-              Add New Deduction
-            </button>
-          </div>
+        <div className="deduction-list">
+          <DeductionsList />
         </div>
 
-        <button className="reset-button" onClick={() => dispatch(reset())}>
-          Reset
-        </button>
+        <div className="deduction-button-form">
+          <div className="deduction-button-frame">
+            <div
+              className="add-deduction-button"
+              onClick={() => setShowAddDeductionForm(true)}
+            >
+              <img
+                className="add-allowance-icon"
+                src="assets/icons/add.png"
+                alt=""
+              />
+              <span className="add-allowance-text button-text">
+                Add New Deduction
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="reset-button-frame " onClick={() => dispatch(reset())}>
+          <img className="reset-button" src="assets/icons/reset.png" alt="" />
+          <span className="reset-button-text button-text">Reset</span>
+        </div>
       </div>
       {showAddDeductionForm && (
         <div className="popup">
